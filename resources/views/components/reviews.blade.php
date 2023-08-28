@@ -2,7 +2,7 @@
 <style>
     .container {
         margin: 13rem auto;
-        width: 80%;
+        width: 84%;
     }
 </style>
 <div class="container flex flex-wrap justify-center gap-6">

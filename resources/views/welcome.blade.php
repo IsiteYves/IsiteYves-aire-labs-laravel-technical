@@ -28,7 +28,7 @@
 
             /* Add media query for desktop view */
             @media (min-width: 1440px) {
-                width: calc(33.33% - 20px); /* Adjust width to fit 3 cards in a row */
+                width: calc(32% - 20px); /* Adjust width to fit 3 cards in a row */
             }
 
             /* Media query for mobile view */
