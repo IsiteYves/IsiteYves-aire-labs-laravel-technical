@@ -5,6 +5,7 @@
         margin: 13rem auto;
         width: 82%;
         align-items:flex-start;
+        justify-content: space-evenly;
 
         /* Add media query for desktop view */
         @media (max-width: 767px) {
@@ -13,7 +14,7 @@
         }
     }
 </style>
-<div class="container flex flex-wrap sm:justify-between gap-2">
+<div class="container flex flex-wrap gap-2">
     @php
         $reviewsData = [
             [
