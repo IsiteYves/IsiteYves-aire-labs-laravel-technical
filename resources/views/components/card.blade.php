@@ -2,17 +2,21 @@
 
 <div class="card bg-white p-6" style="border: 2px solid #111111;">
     <div class="flex">
-        <!-- <div class="star-rating">
-            {!! $starRating !!}
-        </div> -->
+        @for ($i = 1; $i <= 5; $i++)
+            @if ($i <= $starRating)
+                <img src="{{ asset('public/icons/Full_Star.svg') }}" alt="Full Star">
+            @else
+                <img src="{{ asset('public/icons/Empty_Star.svg') }}" alt="Empty Star">
+            @endif
+        @endfor
     </div>
     <div class="">
         <p class="">“{{ $review }}”</p>
         <div class="flex mt-6 items-center justify-between">
-            <img src="{{ $userImage }}" alt="{{ $userName }}" class="h-16">
-            <div class="" style="border: 1px solid blue;">
-                <p style="color: #111111">{{ $userName }}</p>
-                <p>{{ $userJob }}</p>
+            <img src="{{ $userImage }}" alt="{{ $userName }}" class="user-image">
+            <div class="ml-4">
+                <p class="username">{{ $userName }}</p>
+                <p style="color: #808080;margin-top: 0.3rem;">{{ $userJob }}</p>
             </div>
         </div>
     </div>
