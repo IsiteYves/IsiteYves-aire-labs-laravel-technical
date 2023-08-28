@@ -1,11 +1,12 @@
+<!-- resources/views/livewire/components/reviews.blade.php -->
 
 <style>
     .container {
         margin: 13rem auto;
-        width: 84%;
+        width: 82%;
     }
 </style>
-<div class="container flex flex-wrap justify-center gap-6">
+<div class="container flex flex-wrap sm:justify-between gap-2" style="align-items:flex-start;">
     @php
         $reviewsData = [
             [
@@ -53,7 +54,7 @@
         ];
     @endphp
     @foreach ($reviewsData as $reviewData)
-        @component('components.card', $reviewData)
+        @component('livewire.components.card', $reviewData)
         @endcomponent
     @endforeach
 </div>
