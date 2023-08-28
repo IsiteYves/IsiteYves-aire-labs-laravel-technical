@@ -16,11 +16,13 @@
             }
 
             body {
-                background-repeat: no-repeat;
+                background-repeat: repeat;
                 background-color: #FFF1E8;
                 background-image: url('{{ asset('graphics/Accent.svg') }}');
-                /* background-size: cover; */
-                /* background-position: top center; */
+                background-size: 68%;
+                /* background-position: 45% 50% !important; */
+                background-position-x: top right;
+                background-position-y: bottom left;
             }
 
             .card {
