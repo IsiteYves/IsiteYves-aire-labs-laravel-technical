@@ -5,7 +5,7 @@
         width: 80%;
     }
 </style>
-<div class="container flex flex-col justify-center items-center gap-6">
+<div class="container flex flex-wrap justify-center gap-6">
     @php
         $reviewsData = [
             [
@@ -21,13 +21,6 @@
                 'userImage' => 'images/Alexa_Popen.png',
                 'userName' => 'Alexa Popen',
                 'userJob' => 'CEO',
-            ],
-            [
-                'starRating' => 5,
-                'review' => 'You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change & it is a good channel for us.',
-                'userImage' => 'images/Leslie_Alexander.png',
-                'userName' => 'Leslie Alexander',
-                'userJob' => 'Founder',
             ],
             [
                 'starRating' => 5,

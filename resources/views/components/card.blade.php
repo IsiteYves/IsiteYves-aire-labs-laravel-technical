@@ -4,13 +4,13 @@
     <div class="flex">
         @for ($i = 1; $i <= 5; $i++)
             @if ($i <= $starRating)
-                <img src="{{ asset('public/icons/Full_Star.svg') }}" alt="Full Star">
+                <img src="{{ asset('icons/Full_Star.svg') }}" alt="Full Star">
             @else
-                <img src="{{ asset('public/icons/Empty_Star.svg') }}" alt="Empty Star">
+                <img src="{{ asset('icons/Empty_Star.svg') }}" alt="Empty Star">
             @endif
         @endfor
     </div>
-    <div class="">
+    <div class="mt-6">
         <p class="">“{{ $review }}”</p>
         <div class="flex mt-6 items-center justify-between">
             <img src="{{ $userImage }}" alt="{{ $userName }}" class="user-image">
